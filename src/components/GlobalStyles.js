@@ -46,11 +46,23 @@ export const GlobalStyles = createGlobalStyle`
     }
   }
 
+  .articleTitle {
+    color: inherit;
+  }
+
+  .footerLink {
+    color: inherit;
+  }
+
   div a {
     text-decoration: none;
-    color: inherit;
+    color: blue;
     -webkit-tap-highlight-color: hsla(0, 0%, 0%, 0);
     -webkit-tap-highlight-color: transparent;
+  }
+
+  code {
+    color: darkred;
   }
 
   /* CSS Reset */

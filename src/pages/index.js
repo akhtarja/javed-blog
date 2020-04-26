@@ -62,7 +62,7 @@ const Home = ({ data }) => {
           </TextHome>
         </Hero>
         {data.allMarkdownRemark.edges.map(({ node }) => (
-          <Link to={node.fields.slug} key={node.id}>
+          <Link className="articleTitle" to={node.fields.slug} key={node.id}>
             <Post>
               <HeadingL>{node.frontmatter.title}</HeadingL>
               <TextBody>{node.excerpt}</TextBody>

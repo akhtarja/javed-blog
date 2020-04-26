@@ -20,6 +20,7 @@ export const Footer = () => {
   return (
     <Container>
       <ButtonLink
+        className="footerLink"
         href="https://www.javed.dev"
         target="_blank"
         rel="noopener noreferrer"
@@ -27,6 +28,7 @@ export const Footer = () => {
         javed.dev
       </ButtonLink>
       <ButtonLink
+        className="footerLink"
         href="https://twitter.com/AkhtarJa"
         target="_blank"
         rel="noopener noreferrer"
@@ -34,6 +36,7 @@ export const Footer = () => {
         Twitter
       </ButtonLink>
       <ButtonLink
+        className="footerLink"
         href="https://github.com/akhtarja"
         target="_blank"
         rel="noopener noreferrer"
