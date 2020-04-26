@@ -31,4 +31,5 @@ jobs:
       - name: Deploy
         uses: jonelantha/gatsby-s3-action@v1
         with:
-          dest-s3-bucket: your_bucket
+          dest-s3-bucket: blog.javed.dev
+          cloudfront-id-to-invalidate: E3HVT0Z3KUZCZ1
