@@ -1,4 +1,4 @@
 import ArrowBack from './ArrowBack.svg';
-import GatsbyIcon from './GatsbyIcon.png';
+import favicon from './favicon.ico';
 
-export { ArrowBack, GatsbyIcon };
+export { ArrowBack, favicon };
