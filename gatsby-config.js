@@ -61,7 +61,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-s3`,
       options: {
-        bucketName: 'blog.javed.dev',
+        bucketName: process.env.BLOG_JAVED_DEV_BUCKET_NAME,
       },
     },
     `gatsby-plugin-offline`,
