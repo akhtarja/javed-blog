@@ -1,5 +1,7 @@
 # blog.javed.dev
 
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=akhtarja_javed-blog&metric=alert_status)](https://sonarcloud.io/dashboard?id=akhtarja_javed-blog)
+
 This repository contains the codebase for https://blog.javed.dev.
 
 This project was built with [GatsbyJS](https://www.gatsbyjs.org/).
@@ -35,4 +37,4 @@ gatsby build
 gatsby serve
 ```
 
-Your production-ready site is now running at `http://localhost:9000`. The site assets are located in teh `public` folder.
+Your production-ready site is now running at `http://localhost:9000`. The site assets are located in the `public` folder.
