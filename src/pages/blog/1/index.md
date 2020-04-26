@@ -20,4 +20,4 @@ If the file specifies a Node version that you don't have installed, it will get 
 
 If the folder doesn't contain this file, you'll get switched to the default Node version.
 
-The main disadvantage to this approach is that you need Zsh for this to work. Maybe this will encourage you to switch though.
+The main disadvantage to this approach is that you need Zsh for this to work. Maybe this will be the encouragement you need to finally make the switch.
