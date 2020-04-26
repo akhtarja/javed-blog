@@ -16,7 +16,7 @@ To set this up, simply add this snippet to your `.zshrc`, anywhere _after_ you i
 
 This hook makes using NVM completely hands-off. When you switch to a new folder, you'll automatically get switched to the version specified by that folder's `.nvmrc`.
 
-If the file contains a Node version that you don't have installed, it will get installed.
+If the file specifies a Node version that you don't have installed, it will get installed.
 
 If the folder doesn't contain this file, you'll get switched to the default Node version.
 
