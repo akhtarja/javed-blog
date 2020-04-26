@@ -61,6 +61,11 @@ export const GlobalStyles = createGlobalStyle`
     -webkit-tap-highlight-color: transparent;
   }
 
+  pre {
+    background-color: #f3f3f3;
+    padding: 10px 10px 10px 10px;
+  }
+
   code {
     color: darkred;
   }
