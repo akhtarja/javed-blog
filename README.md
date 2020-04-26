@@ -30,7 +30,7 @@ This project has [ESLint](https://eslint.org/) to lint JavaScript and React, [Pr
 
     _Note: You'll also see a second link: _`http://localhost:8000/___graphql`_. This is a tool you can use to experiment with querying your data. Learn more about using this tool in the [Gatsby tutorial](https://www.gatsbyjs.org/tutorial/part-five/#introducing-graphiql)._
 
-## Creating an Optimized Production Build
+## 🏗 Creating an Optimized Production Build
 
 ```
 gatsby build
