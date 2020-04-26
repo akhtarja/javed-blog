@@ -55,10 +55,10 @@ const Home = ({ data }) => {
       <HeaderLogo />
       <Layout>
         <Hero>
-          <HeadingXL>Lewis Gatsby Starter Blog</HeadingXL>
+          <HeadingXL>Javed Akhtar</HeadingXL>
           <TextHome>
-            This is a custom Gatsby starter template to start a new blog or
-            personal website.
+            I&#39;m Javed Akhtar, a sofware engineer living in Vancouver, BC.
+            This blog is about software development.
           </TextHome>
         </Hero>
         {data.allMarkdownRemark.edges.map(({ node }) => (
