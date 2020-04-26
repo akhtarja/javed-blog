@@ -1,6 +1,6 @@
 ---
 title: 'Automatic Version Switching with NVM'
-date: '2020-04-26'
+date: '2020-04-25'
 ---
 
 I'm a big fan of using [NVM](https://github.com/nvm-sh/nvm) for managing my Node version. For personal projects, I like to use the most current version, and generally bump it at the earliest opportunity. However, I have a number of projects (particularly older Ember projects) at work that have hard dependencies on older versions.

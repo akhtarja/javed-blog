@@ -64,6 +64,7 @@ export const GlobalStyles = createGlobalStyle`
   pre {
     background-color: #f3f3f3;
     padding: 10px 10px 10px 10px;
+    overflow: scroll;
   }
 
   code {

@@ -51,7 +51,7 @@ const Post = styled.div`
 const Home = ({ data }) => {
   return (
     <>
-      <SEO title="Blog" />
+      <SEO title="Home" />
       <HeaderLogo />
       <Layout>
         <Hero>
