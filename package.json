@@ -14,7 +14,8 @@
     "develop": "gatsby develop",
     "lint": "./node_modules/.bin/eslint \"{,!(.cache|node_modules|public)/**/}*.{js,jsx,ts,tsx}\"",
     "format": "prettier --write --check \"{,!(.cache|node_modules|public)/**/}*.{js,jsx,ts,tsx,html,css,json,md,yaml,yml,graphql}\"",
-    "serve": "gatsby serve"
+    "serve": "gatsby serve",
+    "deploy": "gatsby-plugin-s3 deploy && aws cloudfront create-invalidation --distribution-id E3HVT0Z3KUZCZ1 --paths \"/*\""
   },
   "husky": {
     "hooks": {
@@ -37,6 +38,7 @@
     "gatsby-plugin-offline": "^3.0.34",
     "gatsby-plugin-react-helmet": "^3.1.22",
     "gatsby-plugin-robots-txt": "^1.5.0",
+    "gatsby-plugin-s3": "^0.3.3",
     "gatsby-plugin-sharp": "^2.4.5",
     "gatsby-plugin-sitemap": "^2.2.27",
     "gatsby-plugin-styled-components": "^3.1.19",

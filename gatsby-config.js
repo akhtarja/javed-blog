@@ -58,6 +58,12 @@ module.exports = {
         ],
       },
     },
+    {
+      resolve: `gatsby-plugin-s3`,
+      options: {
+        bucketName: 'blog.javed.dev',
+      },
+    },
     `gatsby-plugin-offline`,
     `gatsby-plugin-styled-components`,
     `gatsby-plugin-sitemap`,
