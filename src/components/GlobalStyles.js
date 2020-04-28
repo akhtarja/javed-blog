@@ -6,11 +6,11 @@ import { BREAKPOINT } from '../utils/constants';
 export const GlobalStyles = createGlobalStyle`
   :root {
     --accent-color: hsl(339, 100%, 55%);
-    --dark-color: hsl(0, 0%, 15%);
-    --dark-color-light: hsla(0, 0%, 15%, 0.9);
-    --dark-color-lighter: hsla(00, 0%, 15%, 0.7);
-    --light-color: hsl(0, 0%, 99%);
-    --light-color-translucent: hsla(0, 0%, 99%, 0.92);
+    --dark-color: hsl(0, 0%, 99%);
+    --dark-color-light: hsla(0, 0%, 99%, 0.92);
+    --dark-color-lighter: hsla(0, 0%, 99%, 0.92);
+    --light-color: hsla(0, 0%, 15%);
+    --light-color-translucent: hsla(0, 0%, 15%, 0.9);
     --sides-padding-desktop: 3%;
     --sides-padding-mobile: 5%;
   }
@@ -56,19 +56,26 @@ export const GlobalStyles = createGlobalStyle`
 
   div a {
     text-decoration: none;
-    color: blue;
+    color: #6495ED;
+    -webkit-tap-highlight-color: hsla(0, 0%, 0%, 0);
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  div a:visited {
+    text-decoration: none;
+    color: #6495ED;
     -webkit-tap-highlight-color: hsla(0, 0%, 0%, 0);
     -webkit-tap-highlight-color: transparent;
   }
 
   pre {
-    background-color: #f3f3f3;
+    background-color: hsl(0, 0%, 20%);
     padding: 10px 10px 10px 10px;
     overflow: scroll;
   }
 
   code {
-    color: darkred;
+    color: #FFA07A;
   }
 
   /* CSS Reset */
