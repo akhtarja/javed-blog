@@ -17,7 +17,10 @@ end
 Then, when you define your field types for your GraphQL response, use:
 
 ```
-field :aJSONField, GraphqlUtils::Types::Json, 'A field with freeform JSON data', property: :a_json_field
+field :aJSONField,
+  GraphqlUtils::Types::Json,
+  'A field with freeform JSON data',
+  property: :a_json_field
 ```
 
 Now the `aJSONField` key can contain any JSON data, of any shape. This is a surprisingly common use case in the project I'm currently working on.
