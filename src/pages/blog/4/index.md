@@ -63,8 +63,6 @@ query = %(
 
 query_results = ActiveRecord::Base.send(:sanitize_sql_array, [query, item_id])
 query_results = ActiveRecord::Base.connection.select_all(query_results).rows
-
-query_results #=> [ [12, "My item", 4.99] ]
 ```
 
 Note that the `query` parameter in `ActiveRecord::Base.send` becomes an array, and we pass in the `item_id` value here. In composing the query, Rails will apply this value to the SQL where it sees the placeholder `?`.
