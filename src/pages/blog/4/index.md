@@ -79,7 +79,7 @@ where i.price > 3
 and i.name ~ 'item'
 ```
 
-We can paramterize the two filter values like this:
+We can parameterize the two filter values like this:
 
 ```
 query = %(
