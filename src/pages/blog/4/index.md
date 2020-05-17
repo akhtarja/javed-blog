@@ -96,7 +96,7 @@ query = %(
 Now, when we call `ActiveRecord::Base.send`, we send in the filter values as key-value pairs:
 
 ```
-ActiveRecord::Base.send(:senitize_sql_array, [query, { item_price: 3, item_name: 'item' }])
+ActiveRecord::Base.send(:sanitize_sql_array, [query, { item_price: 3, item_name: 'item' }])
 ```
 
 It might look like we're just moving the literal from one place to another, but Active Record is doing some magic behind the scenes here. When you embed the user-supplied literals into the query, Active Record cannot perform quoting on it. But when the literals are provided as a parameter, Active Record will quote the literals to prevent injection attacks. This approach is also more performant, as Active Record will compose the query first and re-use it as needed but with different parameters.
