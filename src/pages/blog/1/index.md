@@ -12,7 +12,7 @@ For something a little more automated, I can create a `.nvmrc` file containing t
 It would be nice to have something even more brainless though. Enter Zsh hooks! If you use Zsh, you can set up a hook that automatically makes the switch for you every time you `cd` into a folder that contains a `.nvmrc` file.
 
 To set this up, simply add this snippet to your `.zshrc`, anywhere _after_ you initialize NVM:
-`gist:akhtarja/2b7537b12f6edafa8242c612525dd00e#nvm_automation`
+`gist:akhtarja/2b7537b12f6edafa8242c612525dd00e#nvm_automation.sh`
 
 This hook makes using NVM completely hands-off. When you switch to a new folder, you'll automatically get switched to the version specified by that folder's `.nvmrc`.
 

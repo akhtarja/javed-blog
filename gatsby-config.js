@@ -49,7 +49,9 @@ module.exports = {
           },
           {
             resolve: 'gatsby-remark-embed-gist',
-            options: {},
+            options: {
+              includeDefaultCss: true,
+            },
           },
           {
             resolve: `gatsby-remark-prismjs`,
