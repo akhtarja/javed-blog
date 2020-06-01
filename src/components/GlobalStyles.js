@@ -46,6 +46,10 @@ export const GlobalStyles = createGlobalStyle`
     }
   }
 
+  .gist-meta {
+    display: none;
+  }
+
   .articleTitle {
     color: inherit;
   }
