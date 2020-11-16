@@ -1,5 +1,8 @@
 # blog.javed.dev
 
+[![Test status](https://github.com/akhtarja/javed-blog/workflows/test/badge.svg)](https://github.com/akhtarja/javed-blog/actions)
+[![Deployment status](https://github.com/akhtarja/javed-blog/workflows/gatsby-deploy/badge.svg)](https://github.com/akhtarja/javed-blog/actions)
+
 [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=akhtarja_javed-blog&metric=alert_status)](https://sonarcloud.io/dashboard?id=akhtarja_javed-blog)
 
 This repository contains the codebase for https://blog.javed.dev.
@@ -41,17 +44,11 @@ Your production-ready site is now running at `http://localhost:9000`. The site a
 
 ## ⚙️ Deploying to Amazon Web Services
 
-The site is hosted in an S3 bucket in AWS, with a CloudFront distribution in front of it. The deployment process expects two enxironment variables:
+The site is hosted in an S3 bucket in AWS, with a CloudFront distribution in front of it. The deployment process expects two environment variables:
 
 | Variable name                  | Description                                                                                          |
 | :----------------------------- | :--------------------------------------------------------------------------------------------------- |
 | `BLOG_JAVED_DEV_BUCKET_NAME`   | The name of the Amazon S3 bucket to deploy to. This bucket should be set up to host a static website |
 | `BLOG_JAVED_DEV_CLOUDFRONT_ID` | The distribution ID of the site's Cloudfront distribution.                                           |
 
-With both environment variables set:
-
-```sh
-npm run deploy
-```
-
-You will be asked to confirm, and the deployment will begin. Once complete, the script will invalidate the CloudFront distribution's cache. Press `q` to exit once you see the results.
+When a pull request is merged to the `master` branch, the GitHub Actions pipeline will deploy it to AWS and invalidate the CloudFront distribution cache. This process can be monitored from the `Actions` tab.
