@@ -1,9 +1,8 @@
 # blog.javed.dev
 
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=akhtarja_javed-blog&metric=alert_status)](https://sonarcloud.io/dashboard?id=akhtarja_javed-blog)
 [![Test status](https://github.com/akhtarja/javed-blog/workflows/test/badge.svg)](https://github.com/akhtarja/javed-blog/actions)
 [![Deployment status](https://github.com/akhtarja/javed-blog/workflows/gatsby-deploy/badge.svg)](https://github.com/akhtarja/javed-blog/actions)
-
-[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=akhtarja_javed-blog&metric=alert_status)](https://sonarcloud.io/dashboard?id=akhtarja_javed-blog)
 
 This repository contains the codebase for https://blog.javed.dev.
 
