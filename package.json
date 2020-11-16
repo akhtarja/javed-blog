@@ -15,7 +15,9 @@
     "lint": "./node_modules/.bin/eslint \"{,!(.cache|node_modules|public)/**/}*.{js,jsx,ts,tsx}\"",
     "format": "prettier --write --check \"{,!(.cache|node_modules|public)/**/}*.{js,jsx,ts,tsx,html,css,json,md,yaml,yml,graphql}\"",
     "serve": "gatsby serve",
-    "deploy": "gatsby-plugin-s3 deploy && aws cloudfront create-invalidation --distribution-id $BLOG_JAVED_DEV_CLOUDFRONT_ID --paths \"/*\""
+    "deploy": "gatsby-plugin-s3",
+    "invalidate": "aws cloudfront create-invalidation --distribution-id $BLOG_JAVED_DEV_CLOUDFRONT_ID --paths \"/*\"",
+    "deploy:cd": "gatsby-plugin-s3 deploy -y"
   },
   "husky": {
     "hooks": {

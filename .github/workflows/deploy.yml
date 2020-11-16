@@ -1,0 +1,27 @@
+name: gatsby-deploy
+on:
+  push:
+    branches:
+      - master
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v1
+      - run: npm install
+      - run: npm run build
+        env:
+          BLOG_JAVED_DEV_BUCKET_NAME: ${{ secrets.BLOG_JAVED_DEV_BUCKET_NAME }}
+      - run: npm run deploy:cd
+        env:
+          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          AWS_DEFAULT_REGION: us-east-1
+      - run: npm run invalidate
+        env:
+          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          AWS_DEFAULT_REGION: us-east-1
+          AWS_PAGER: ''
+          BLOG_JAVED_DEV_CLOUDFRONT_ID: ${{ secrets.BLOG_JAVED_DEV_CLOUDFRONT_ID }}
