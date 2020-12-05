@@ -80,6 +80,10 @@ export const GlobalStyles = createGlobalStyle`
 
   code {
     color: #FFA07A;
+    border: 1px dotted #666666;
+    border-radius: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
   }
 
   /* CSS Reset */
