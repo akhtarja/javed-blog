@@ -1,5 +1,5 @@
 ---
-title: 'Parameterizing raw SQL Queries in Rails'
+title: 'Parameterizing Raw SQL Queries in Rails'
 date: '2020-05-16'
 ---
 
@@ -9,7 +9,7 @@ However, in cases where performance is a concern, nothing beats raw SQL. This pr
 
 `gist:akhtarja/ed71ae4caa99793e0e7ce512d1482a39#1.sql`
 
-This is simple a simple enough query, calling for a few columns in the `items` table, with a filter on the `id` column. To use this in Rails, we need a bit more:
+This is a simple enough query, calling for a few columns in the `items` table, with a filter on the `id` column. To use this in Rails, we need a bit more:
 
 `gist:akhtarja/ed71ae4caa99793e0e7ce512d1482a39#2.rb`
 
